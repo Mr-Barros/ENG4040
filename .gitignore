@@ -1,0 +1,32 @@
+# Jupyter Notebook specific files
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Python-related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook output files
+*.out
+*.log
+
+# Environment files
+*.env
+*.venv
+*.virtualenv
+*.pyenv
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook metadata
+*.nbconvert.ipynb
+*.nbconvert.py
