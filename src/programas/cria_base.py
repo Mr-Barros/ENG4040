@@ -16,4 +16,6 @@ archives = "/games/archives"
 
 # procura algum usuario no dicionario para o qual não foi feito o processo e repete para este
 
+# adiciona o usuario ao json users.json e salva a alteração
+
 ### falta decidir o que fazer com o pgn de cada usuário; considerar adicionar o uuid de cada jogo para não salvar o dobro de dados
