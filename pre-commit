@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if ! command -v jupyter-nbconvert &> /dev/null; then
+  echo "O nbconvert não está instalado. Instalando agora..."
+  pip install nbconvert
+
+  if [ $? -ne 0 ]; then
+    echo "Falha ao instalar o nbconvert. Por favor, instale-o manualmente."
+    exit 1
+  fi
+fi
+
+
+notebooks=$(git diff --cached --name-only --diff-filter=AM | grep '\.ipynb$')
+
+
+if [ -z "$notebooks" ]; then
+  exit 0
+fi
+
+for notebook in $notebooks; do
+    jupyter nbconvert --ClearOutputPreprocessor.enabled=True \
+                      --ClearMetadataPreprocessor.enabled=True \
+                      --to=notebook \
+                      --inplace "$notebook"
+done
+
+git add $notebooks
