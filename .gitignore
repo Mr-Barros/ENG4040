@@ -33,3 +33,7 @@ Thumbs.db
 
 dados/experimentos/*
 dados/base/*
+stockfish/*
+stockfish/
+/**/stockfish/*
+/**/stockfish/
