@@ -5,6 +5,12 @@ Neste repositório estarão guardados todos os arquivos do projeto.
 ### Links relevantes:
 [Link para o Trello](https://trello.com/b/tfo8Ti9x/eng4040-manha-grupo-b-alfieri)
 
+### Como usar o Stockfish dentro do projeto
+
+Primeiro, você precisa baixar Stockfish do site oficial da engine. Você deve extrair o arquivo. Ao extrair, é provável que esteja desta maneira:
+![alt text](assets/pasta_extraida_stockfish.png)
+A seguir você deve mover a pasta que está dentro desta, chamada [stockfish] apenas para dentro do projeto, dentro da [stockfish folder](src/stockfish_folder/). Ao final, a sua pasta deve estar desta maneira: 
+![alt text](assets/stockfish_no_lugar.png)
 
 ### Como remover metadados de notebooks
 
